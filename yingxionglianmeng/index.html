@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="英雄联盟换肤-专业提供LOL皮肤预览、特效对比及最新赛季皮肤资讯。支持英雄皮肤展示、技能特效演示、皮肤获取渠道推荐与使用教程。">
+    <meta name="keywords" content="英雄联盟换肤,LOL皮肤,英雄联盟皮肤特效,英雄联盟皮肤预览,LOL皮肤下载,英雄联盟皮肤站">
+    <title>英雄联盟换肤-LOL皮肤特效预览与获取指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #c89b3d;
+            --primary-hover: #e5b042;
+            --bg-color: #0f1014;
+            --card-bg: #1a1b21;
+            --text-main: #ffffff;
+            --text-secondary: #9ca3af;
+            --border-color: #2d2f36;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: rgba(15, 16, 20, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 6px 16px 6px 36px;
+            color: var(--text-main);
+            font-size: 0.9rem;
+            width: 200px;
+            transition: width 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            width: 240px;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 14px;
+            fill: var(--text-secondary);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            position: relative;
+            padding: 80px 0;
+            background: linear-gradient(to bottom, #1a1c24 0%, var(--bg-color) 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 70% 30%, rgba(200, 155, 61, 0.15) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 24px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 .highlight {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            font-size: 1.1rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #000;
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--text-main);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* 皮肤分类 */
+        .section-title {
+            font-size: 1.5rem;
+            margin: 40px 0 24px;
+            padding-left: 12px;
+            border-left: 4px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section-title a {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .section-title a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 16px;
+        }
+
+        .hero-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, border-color 0.2s;
+            cursor: pointer;
+        }
+
+        .hero-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary-color);
+        }
+
+        .hero-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-card-info {
+            padding: 12px;
+        }
+
+        .hero-card h3 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .hero-card span {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* 皮肤预览区域 */
+        .preview-section {
+            background-color: #16181d;
+        }
+
+        .preview-container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 24px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            min-height: 500px;
+        }
+
+        .preview-sidebar {
+            background: #1f222a;
+            padding: 20px;
+            border-right: 1px solid var(--border-color);
+        }
+
+        .preview-list li {
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .preview-list li:hover, .preview-list li.active {
+            background: rgba(200, 155, 61, 0.1);
+            color: var(--primary-color);
+        }
+
+        .preview-main {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .champion-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+            margin-bottom: 20px;
+            box-shadow: 0 0 30px rgba(200, 155, 61, 0.2);
+        }
+
+        .skin-name {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .skin-price {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .skill-icons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .skill-icon {
+            width: 50px;
+            height: 50px;
+            background: #2d2f36;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            transition: all 0.3s;
+        }
+
+        .skill-icon.active {
+            background: var(--primary-color);
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        .skin-desc {
+            color: var(--text-secondary);
+            max-width: 700px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .skin-visual {
+            width: 100%;
+            height: 300px;
+            background: #000;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 1.2rem;
+            border: 1px solid var(--border-color);
+        }
+        
+        .skin-visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .skin-visual:hover img {
+            opacity: 1;
+        }
+
+        /* 攻略与资讯 */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .news-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .news-img {
+            height: 160px;
+            background: #2d2f36;
+            position: relative;
+        }
+        
+        .news-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.7);
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .news-meta {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* 常见问题 */
+        .faq-section {
+            background-color: #16181d;
+            padding: 60px 0;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+            margin-top: 10px;
+            padding-top: 16px;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #0a0b0d;
+            padding: 40px 0 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--text-main);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #1f222a;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 16px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .preview-container {
+                grid-template-columns: 1fr;
+            }
+
+            .preview-sidebar {
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                max-height: 200px;
+                overflow-y: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"/>
+                </svg>
+                <span>LOL Skin</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">皮肤预览</a></li>
+                    <li><a href="#">英雄大全</a></li>
+                    <li><a href="#">获取攻略</a></li>
+                    <li><a href="#">皮肤商店</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <svg class="search-icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <input type="text" placeholder="搜索英雄或皮肤...">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>探索 <span class="highlight">英雄联盟换肤</span> 的无限魅力</h1>
+                <p>为您提供最全的LOL皮肤展示、技能特效对比及获取指南。无论是炫酷特效还是稀有背景故事，这里都有您想要的内容。</p>
+                <div class="hero-actions">
+                    <a href="#preview" class="btn btn-primary">立即预览</a>
+                    <a href="#guide" class="btn btn-outline">查看攻略</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 热门皮肤推荐 -->
+        <section class="container">
+            <div class="section-title">
+                <h2>热门皮肤推荐</h2>
+                <a href="#">查看更多 &rarr;</a>
+            </div>
+            <div class="hero-grid">
+                <article class="hero-card">
+                    <img src="https://picsum.photos/seed/akali/300/200" alt="暗影刺客">
+                    <div class="hero-card-info">
+                        <h3>暗影刺客·阿卡丽</h3>
+                        <span>限定 | 传说级</span>
+                    </div>
+                </article>
+                <article class="hero-card">
+                    <img src="https://picsum.photos/seed/yasuo/300/200" alt="武士">
+                    <div class="hero-card-info">
+                        <h3>武士·亚索</h3>
+                        <span>史诗级 | 流行</span>
+                    </div>
+                </article>
+                <article class="hero-card">
+                    <img src="https://picsum.photos/seed/ezreal/300/200" alt="未来战士">
+                    <div class="hero-card-info">
+                        <h3>未来战士·伊泽瑞尔</h3>
+                        <span>史诗级 | 科技</span>
+                    </div>
+                </article>
+                <article class="hero-card">
+                    <img src="https://picsum.photos/seed/missfortune/300/200" alt="赏金猎人">
+                    <div class="hero-card-info">
+                        <h3>赏金猎人·女枪</h3>
+                        <span>传说级 | 优雅</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 皮肤深度预览 -->
+        <section id="preview" class="preview-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>深度特效预览</h2>
+                    <a href="#">查看所有英雄 &rarr;</a>
+                </div>
+                
+                <div class="preview-container">
+                    <!-- 左侧列表 -->
+                    <aside class="preview-sidebar">
+                        <ul class="preview-list">
+                            <li class="active" onclick="selectSkin('akali', '暗影刺客', '1250点券', 'https://picsum.photos/seed/akali/600/400')">
+                                <span>暗影刺客</span>
+                                <span>传说</span>
+                            </li>
+                            <li onclick="selectSkin('yasuo', '武士亚索', '6900点券', 'https://picsum.photos/seed/yasuo/600/400')">
+                                <span>武士亚索</span>
+                                <span>史诗</span>
+                            </li>
+                            <li onclick="selectSkin('jinx', '金克丝', '免费', 'https://picsum.photos/seed/jinx/600/400')">
+                                <span>金克丝</span>
+                                <span>免费</span>
+                            </li>
+                            <li onclick="selectSkin('orianna', '源计划·薇恩', '975点券', 'https://picsum.photos/seed/orianna/600/400')">
+                                <span>源计划·薇恩</span>
+                                <span>史诗</span>
+                            </li>
+                            <li onclick="selectSkin('lux', '光辉女郎', '免费', 'https://picsum.photos/seed/lux/600/400')">
+                                <span>光辉女郎</span>
+                                <span>免费</span>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <!-- 右侧主内容 -->
+                    <div class="preview-main" id="previewContent">
+                        <img src="https://picsum.photos/seed/akali/200/200" alt="阿卡丽头像" class="champion-avatar" id="skinAvatar">
+                        <h2 class="skin-name" id="skinName">暗影刺客</h2>
+                        <div class="skin-price" id="skinPrice">1250 点券</div>
+                        
+                        <div class="skill-icons">
+                            <div class="skill-icon active">Q</div>
+                            <div class="skill-icon">W</div>
+                            <div class="skill-icon">E</div>
+                            <div class="skill-icon">R</div>
+                        </div>
+
+                        <p class="skin-desc" id="skinDesc">
+                            暗影刺客是阿卡丽的传说级皮肤系列之一。该皮肤采用了暗黑哥特风格，强调刺客的神秘与危险。技能特效中融入了火焰与暗影元素，释放技能时会伴随独特的音效和粒子效果。背景故事中，阿卡丽化身为一名寻找复仇的暗影刺客，其技能特效完美契合了这一角色设定。
+                        </p>
+
+                        <div class="skin-visual">
+                            <img src="https://picsum.photos/seed/akali/800/500" alt="暗影刺客技能演示" id="skinImage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 攻略与资讯 -->
+        <section class="container" style="padding-top: 60px;">
+            <div class="section-title">
+                <h2>最新资讯与获取攻略</h2>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-img">
+                        <span class="news-tag">攻略</span>
+                        <img src="https://picsum.photos/seed/loot/400/250" style="width:100%; height:100%; object-fit:cover;" alt="战利品">
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-title">如何高效获取英雄联盟稀有皮肤？</h3>
+                        <div class="news-meta">2023-10-24 · 攻略指南</div>
+                        <p style="margin-top: 10px; color: var(--text-secondary); font-size: 0.9rem;">详细介绍通过战利品系统、抽奖活动以及返场活动获取稀有皮肤的技巧与概率分析。</p>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-img">
+                        <span class="news-tag">资讯</span>
+                        <img src="https://picsum.photos/seed/event/400/250" style="width:100%; height:100%; object-fit:cover;" alt="活动">
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-title">2024赛季限定皮肤前瞻：源计划与星之守护者</h3>
+                        <div class="news-meta">2023-10-22 · 游戏资讯</div>
+                        <p style="margin-top: 10px; color: var(--text-secondary); font-size: 0.9rem;">官方透露新赛季将回归两大经典系列，特效升级，获取方式全解析。</p>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-img">
+                        <span class="news-tag">对比</span>
+                        <img src="https://picsum.photos/seed/compare/400/250" style="width:100%; height:100%; object-fit:cover;" alt="对比">
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-title">2023年度皮肤特效大比拼：谁是最强视觉盛宴？</h3>
+                        <div class="news-meta">2023-10-20 · 评测</div>
+                        <p style="margin-top: 10px; color: var(--text-secondary); font-size: 0.9rem;">深度解析本年度所有传说级皮肤的技能特效、音效以及回城动画。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section id="guide" class="faq-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>常见问题解答</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">换肤会影响游戏性能吗？</div>
+                        <div class="faq-answer">大多数官方皮肤对游戏帧数影响极小，但部分拥有复杂粒子特效的皮肤（如源计划、未来战士）在低端设备上可能会有轻微卡顿。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">皮肤可以交易吗？</div>
+                        <div class="faq-answer">目前英雄联盟不支持玩家之间的皮肤交易。皮肤只能通过点券购买、活动获取或战利品系统抽取。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">如何辨别皮肤的真假特效？</div>
+                        <div class="faq-answer">建议通过官方客户端或信誉良好的第三方预览站查看。注意区分普通特效、史诗特效和传说特效在技能颜色和模型上的差异。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.8;">LOL Skin 是一个专注于《英雄联盟》皮肤资讯与展示的第三方平台。我们致力于为玩家提供最直观的皮肤预览体验和最准确的获取信息。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">皮肤大全</a></li>
+                        <li><a href="#">英雄列表</a></li>
+                        <li><a href="#">获取攻略</a></li>
+                        <li><a href="#">皮肤商店</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>友情链接</h4>
+                    <ul>
+                        <li><a href="#">Riot Games 官网</a></li>
+                        <li><a href="#">英雄联盟 WIKI</a></li>
+                        <li><a href="#">掌盟</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 LOL Skin Guide. 本站为非官方站点，所有游戏版权属于 Riot Games。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function selectSkin(id, name, price, imageUrl) {
+            // 更新文本内容
+            document.getElementById('skinName').innerText = name;
+            document.getElementById('skinPrice').innerText = price;
+            document.getElementById('skinDesc').innerText = `${name}是${id}系列的代表皮肤。该皮肤拥有独特的模型设计、华丽的技能特效以及动听的语音包。${price}点券的定价使其成为该英雄最受欢迎的皮肤之一。点击技能图标可查看具体特效演示。`;
+            
+            // 更新图片
+            const avatarUrl = imageUrl.replace('/600/400', '/200/200');
+            document.getElementById('skinAvatar').src = avatarUrl;
+            document.getElementById('skinImage').src = imageUrl;
+
+            // 更新列表激活状态
+            const listItems = document.querySelectorAll('.preview-list li');
+            listItems.forEach(item => item.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+
+            // 模拟技能图标切换动画
+            const skills = document.querySelectorAll('.skill-icon');
+            skills.forEach(skill => {
+                skill.classList.remove('active');
+                setTimeout(() => skill.classList.add('active'), 100);
+            });
+        }
+    </script>
+</body>
+  </html>
