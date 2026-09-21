@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梦见你的那一夜 - 沉浸式情感互动体验与梦境解析指南</title>
+    <meta name="description" content="探索‘梦见你的那一夜’背后的情感含义。提供深度心理解析、经典文学作品回顾、互动梦境叙事体验以及情感共鸣指南，帮助您理解潜意识中的渴望与记忆。">
+    <meta name="keywords" content="梦见你的那一夜, 梦境解析, 情感文学, 潜意识, 梦境叙事, 情感共鸣">
+    <style>
+        :root {
+            --bg-body: #0f0f11;
+            --bg-card: #1a1a1d;
+            --bg-card-hover: #252529;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent: #ff6b6b;
+            --accent-glow: rgba(255, 107, 107, 0.3);
+            --border: #333;
+            --font-serif: 'Georgia', 'Times New Roman', serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-family: var(--font-serif);
+            font-weight: 400;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #aaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--accent);
+            margin: 10px auto 0;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 15, 17, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .btn-nav {
+            padding: 8px 20px;
+            border: 1px solid var(--text-muted);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-nav:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: radial-gradient(circle at center, #2a2a30 0%, var(--bg-body) 70%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiIHN0cm9rZS13aWR0aD0iMSI+PHBhdGggZD0iTTAgMjBoNDBNMjAgMHY0MCIvPjwvc3ZnPg==');
+            animation: drift 60s linear infinite;
+            opacity: 0.5;
+        }
+
+        @keyframes drift {
+            from { transform: translate(0, 0); }
+            to { transform: translate(-50%, -50%); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero-desc {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 4px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px var(--accent-glow);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px var(--accent-glow);
+        }
+
+        /* Content Grid */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 30px;
+            transition: transform 0.3s, border-color 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            background: var(--bg-card-hover);
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        /* Features Section */
+        .features {
+            background: #141416;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .feature-number {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.05);
+            line-height: 1;
+        }
+
+        /* Interpretation List */
+        .interpretation-list {
+            counter-reset: dream-counter;
+        }
+
+        .dream-item {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 30px;
+            border-left: 1px solid var(--border);
+        }
+
+        .dream-item::before {
+            counter-increment: dream-counter;
+            content: counter(dream-counter);
+            position: absolute;
+            left: -11px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--bg-card);
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: var(--accent);
+        }
+
+        .dream-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://picsum.photos/seed/night/1200/600') center/cover;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            font-style: italic;
+        }
+
+        .quote-author {
+            color: var(--accent);
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0c;
+            padding: 60px 0 30px;
+            border-top: 1px solid var(--border);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--text-main);
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #222;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+            .hero { padding-top: 60px; height: auto; min-height: 100vh; }
+            .grid-3 { grid-template-columns: 1fr; }
+            .feature-item { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DREAM.WALKER</div>
+                <div class="nav-links">
+                    <a href="#meaning">梦境解析</a>
+                    <a href="#narrative">互动叙事</a>
+                    <a href="#guide">情感指南</a>
+                </div>
+                <a href="#experience" class="btn-nav">开始体验</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content text-center">
+                <div class="hero-subtitle">探索潜意识深处的回响</div>
+                <h1>梦见你的那一夜</h1>
+                <p class="hero-desc">梦境是现实的镜像，也是情感的避难所。在“梦见你的那一夜”，我们通过心理解析与文学叙事，重现那些无法言说的渴望、遗憾与重逢。</p>
+                <a href="#meaning" class="btn-primary">解读你的梦境</a>
+            </div>
+        </section>
+
+        <!-- Core Meaning Section -->
+        <section id="meaning" class="section-padding">
+            <div class="container">
+                <div class="text-center">
+                    <h2>梦境解析：为什么是“那一夜”</h2>
+                    <p>关键词“梦见你的那一夜”往往不仅仅指代一个简单的睡眠事件，它象征着一种**阈限状态**。在这一夜，现实与幻想的界限模糊，记忆被重新编码。</p>
+                </div>
+                
+                <div class="grid-3" style="margin-top: 50px;">
+                    <article class="card">
+                        <div class="card-icon">🌙</div>
+                        <h3>潜意识的投射</h3>
+                        <p>“梦见你的那一夜”通常反映了你近期对某人的强烈思念或未解的情感纠葛。心理学认为，梦境是潜意识处理情感冲突的场所。</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">🪞</div>
+                        <h3>自我认知的重组</h3>
+                        <p>在梦中见到特定的人，有时并非为了对方，而是为了梦中那个“渴望被看见”的自己。这一夜，你重新审视了内心深处的需求。</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">✨</div>
+                        <h3>情绪的疗愈</h3>
+                        <p>这种梦境往往带有强烈的情感色彩，可能是悲伤的告别，也可能是欢愉的重逢。它是大脑进行情绪整理与疗愈的重要机制。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis List -->
+        <section class="section-padding features">
+            <div class="container">
+                <div class="grid-3">
+                    <div class="content-col">
+                        <h2>常见场景解读</h2>
+                        <p>根据不同的梦境细节，“梦见你的那一夜”可能承载着截然不同的含义。以下是几种典型的心理投射分析：</p>
+                        <br>
+                        <div class="interpretation-list">
+                            <div class="dream-item">
+                                <h3>场景一：重逢</h3>
+                                <p>如果在梦中你们重逢且气氛和谐，这通常预示着内心的焦虑正在缓解，或者你渴望某种形式的和解与连接。</p>
+                            </div>
+                            <div class="dream-item">
+                                <h3>场景二：告别</h3>
+                                <p>若梦境以离别或对方离开告终，这往往是一种“哀悼”的象征。你正在潜意识里为这段关系画上句号，为走出过去做准备。</p>
+                            </div>
+                            <div class="dream-item">
+                                <h3>场景三：未竟之事</h3>
+                                <p>梦见与对方交谈却无法说出口，或是在梦中反复尝试却失败，反映了现实生活中未解决的心结或遗憾。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="align-items: center;">
+                        <h3 style="margin-bottom: 20px;">互动小测试</h3>
+                        <p style="text-align: center;">想知道这一夜的主题是什么吗？</p>
+                        <div style="margin-top: 20px; width: 100%;">
+                            <button class="btn-nav" style="width: 100%; cursor: pointer;" onclick="alert('请记录下梦中对方的衣着、颜色以及你当时的第一感觉，这通常是解梦的关键线索。')">点击开始自测</button>
+                        </div>
+                        <div style="margin-top: 30px; width: 100%;">
+                            <div style="background: #000; height: 200px; border-radius: 4px; display: flex; align-items: center; justify-content: center; border: 1px dashed #444;">
+                                <span style="color: #666;">[ 梦境记忆碎片区域 ]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Narrative/Quote Section -->
+        <section class="quote-section">
+            <div class="container">
+                <p class="quote-text">“梦境是灵魂在清醒时无法抵达的彼岸，而梦见你的那一夜，是灵魂最诚实的告白。”</p>
+                <p class="quote-author">—— 致每一位在梦中寻找答案的人</p>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section id="guide" class="section-padding">
+            <div class="container">
+                <div class="text-center">
+                    <h2>如何面对这一夜的记忆</h2>
+                    <p>醒来后，如何处理这份残留的情绪？以下是一些建议。</p>
+                </div>
+
+                <div class="grid-3" style="margin-top: 40px;">
+                    <div class="feature-item">
+                        <div class="feature-number">01</div>
+                        <div>
+                            <h3>记录梦境日记</h3>
+                            <p>醒来后第一时间用文字记录下梦境的细节，哪怕只是碎片。文字是整理混乱思维的最佳工具。</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">02</div>
+                        <div>
+                            <h3>区分现实与幻想</h3>
+                            <p>明白梦境是大脑的模拟游戏，不代表未来一定会发生。将情绪与现实生活做适当区隔。</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">03</div>
+                        <div>
+                            <h3>寻求情感出口</h3>
+                            <p>如果梦境带来的情绪过于强烈，不妨与信任的朋友倾诉，或通过艺术创作（写作、绘画）来释放。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p>专注于梦境解析与情感疗愈，帮助人们在梦境的海洋中找到内心的平静与力量。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>探索</h4>
+                    <ul>
+                        <li><a href="#">心理测试</a></li>
+                        <li><a href="#">经典文学</a></li>
+                        <li><a href="#">冥想引导</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系</h4>
+                    <ul>
+                        <li><a href="#">关于隐私</a></li>
+                        <li><a href="#">使用条款</a></li>
+                        <li><a href="#">投稿指南</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 梦见你的那一夜. All Rights Reserved. 梦境解析与情感社区.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+</html>
