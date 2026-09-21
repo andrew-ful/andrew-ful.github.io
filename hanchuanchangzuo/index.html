@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韩船长坐首艘救援船 - 专业海事救援装备与安全导航服务</title>
+    <meta name="description" content="韩船长坐首艘救援船专题页面。为您提供专业的海事救援装备介绍、搜救船只性能解析、救援操作流程指南及安全航海注意事项，致力于保障海上生命财产安全。">
+    <meta name="keywords" content="韩船长坐首艘救援船, 海事救援, 救援船只, 搜救装备, 航海安全, 海上救援">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #00a8cc;
+            --accent-color: #ff9800;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f4f7f6;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .nav-btn {
+            background-color: var(--primary-color);
+            color: var(--white) !important;
+            padding: 8px 20px;
+            border-radius: 4px;
+        }
+
+        .nav-btn:hover {
+            background-color: #004494;
+            color: var(--white) !important;
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* 主要内容区 */
+        main {
+            padding: 60px 0;
+        }
+
+        /* 章节通用样式 */
+        section {
+            margin-bottom: 60px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -17px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        .section-link {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        /* 救援船只介绍 */
+        .ship-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .ship-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .ship-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ship-image {
+            height: 200px;
+            background-color: #ddd;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ship-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ship-tag {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: var(--white);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        .ship-content {
+            padding: 25px;
+        }
+
+        .ship-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .ship-content p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .ship-specs {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .spec-item span {
+            display: block;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* 救援指南 */
+        .guide-wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .guide-list article {
+            background: var(--white);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            gap: 20px;
+        }
+
+        .guide-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #e3f2fd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .guide-text h3 {
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .guide-text p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .guide-sidebar {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .guide-sidebar h3 {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .sidebar-list li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar-list a {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .sidebar-list a:hover {
+            color: var(--primary-color);
+        }
+
+        /* 常见问题 */
+        .faq-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            padding-left: 20px;
+            border-left: 3px solid var(--accent-color);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #1a252f;
+            color: #bdc3c7;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #34495e;
+            padding-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .guide-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 头部导航 -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M5 20v-4"></path><path d="M9 20v-6"></path><path d="M13 20V8"></path><path d="M17 20V4"></path></svg>
+                <span>海事救援通</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#ships">救援船只</a></li>
+                    <li><a href="#guide">救援指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#" class="nav-btn">立即咨询</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero 区域 -->
+    <section class="hero">
+        <div class="container">
+            <h1>韩船长坐首艘救援船<br>专业护航海上安全</h1>
+            <p>深入解析新一代专业海事救援船只的技术特性、操作规范及救援实战案例，为您提供全方位的海上安全保障指南。</p>
+            <a href="#ships" class="nav-btn" style="display: inline-block; background-color: var(--white); color: var(--primary-color);">探索救援装备</a>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>救援成功案例</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>专业救援船只</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24h</h3>
+                    <p>全天候待命</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <!-- 救援船只介绍 -->
+        <section id="ships">
+            <div class="section-header">
+                <h2 class="section-title">新一代救援船只解析</h2>
+                <a href="#" class="section-link">查看全部船只 &rarr;</a>
+            </div>
+            
+            <div class="ship-grid">
+                <!-- 船只 1 -->
+                <article class="ship-card">
+                    <div class="ship-image">
+                        <span class="ship-tag">主力救援船</span>
+                        <img src="https://picsum.photos/seed/ship1/400/300" alt="专业海事救援船">
+                    </div>
+                    <div class="ship-content">
+                        <h3>重型多功能救援艇</h3>
+                        <p>具备卓越的抗浪性和快速响应能力，专为复杂海况下的海上搜救设计，配备先进导航与通信系统。</p>
+                        <div class="ship-specs">
+                            <div class="spec-item">排水量 <span>>500吨</span></div>
+                            <div class="spec-item">航速 <span>>35节</span></div>
+                            <div class="spec-item">续航 <span>>1000海里</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 船只 2 -->
+                <article class="ship-card">
+                    <div class="ship-image">
+                        <span class="ship-tag">高速冲锋舟</span>
+                        <img src="https://picsum.photos/seed/ship2/400/300" alt="高速搜救冲锋舟">
+                    </div>
+                    <div class="ship-content">
+                        <h3>高速搜救冲锋舟</h3>
+                        <p>轻量化设计，灵活机动，适用于近岸搜寻、人员打捞及狭窄水域救援，是韩船长团队的首选装备。</p>
+                        <div class="ship-specs">
+                            <div class="spec-item">排水量 <span>8吨</span></div>
+                            <div class="spec-item">航速 <span>>45节</span></div>
+                            <div class="spec-item">续航 <span>>200海里</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 船只 3 -->
+                <article class="ship-card">
+                    <div class="ship-image">
+                        <span class="ship-tag">远洋补给船</span>
+                        <img src="https://picsum.photos/seed/ship3/400/300" alt="远洋综合补给船">
+                    </div>
+                    <div class="ship-content">
+                        <h3>远洋综合补给船</h3>
+                        <p>为远洋救援行动提供后勤保障，具备医疗救治、物资运输及应急燃油补给功能，保障长航时作业。</p>
+                        <div class="ship-specs">
+                            <div class="spec-item">排水量 <span>2000吨</span></div>
+                            <div class="spec-item">续航 <span>>5000海里</span></div>
+                            <div class="spec-item">医疗舱 <span>ICU级</span></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 救援指南与侧边栏 -->
+        <section id="guide">
+            <div class="section-header">
+                <h2 class="section-title">救援操作与安全指南</h2>
+            </div>
+
+            <div class="guide-wrapper">
+                <!-- 左侧内容 -->
+                <div class="guide-list">
+                    <article>
+                        <div class="guide-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                        </div>
+                        <div class="guide-text">
+                            <h3>搜救响应流程规范</h3>
+                            <p>了解从接到报警到船只出航的标准作业程序（SOP），包括风险评估、资源调配、现场指挥及后续撤离，确保每一次救援行动高效有序。</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="guide-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <div class="guide-text">
+                            <h3>海上遇险自救技巧</h3>
+                            <p>当船只发生故障或遭遇恶劣天气时，韩船长坐首艘救援船的经验表明，保持冷静、固定自身、发出求救信号并等待专业救援是最高效的生存策略。</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="guide-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        </div>
+                        <div class="guide-text">
+                            <h3>救援装备维护保养</h3>
+                            <p>定期检查救生衣、通讯设备、引擎状态及消防器材是保障救援船只随时处于战备状态的关键，避免因设备故障延误最佳救援时机。</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 右侧侧边栏 -->
+                <aside class="guide-sidebar">
+                    <h3>救援知识库</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">海上气象预警信号解读 <span>&rarr;</span></a></li>
+                        <li><a href="#">船只遇险通讯频段大全 <span>&rarr;</span></a></li>
+                        <li><a href="#">水上搜救无人机操作指南 <span>&rarr;</span></a></li>
+                        <li><a href="#">溺水急救黄金五分钟 <span>&rarr;</span></a></li>
+                        <li><a href="#">如何正确穿戴救生衣 <span>&rarr;</span></a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section id="faq">
+            <div class="section-header">
+                <h2 class="section-title">常见问题解答</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        韩船长坐首艘救援船的救援能力如何？
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        该救援船配备了先进的导航雷达、声呐探测设备及全天候通讯系统，具备在复杂海况下进行人员搜救、物资运输和医疗救护的综合能力。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        遇到海上紧急情况应该拨打什么号码？
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        在中国海域，应立即拨打全国统一海上遇险求救电话：12395。请保持冷静，准确说明位置、遇险性质和人员情况，等待专业救援。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        普通民众如何参与海上志愿救援？
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        普通民众应主要关注水上安全，不擅自下水施救。如果您具备专业资质，可以申请加入正规的海事志愿者组织，接受系统培训后参与辅助性救援工作。
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.6;">
+                        海事救援通致力于普及海洋安全知识，推广专业救援装备使用，为每一位海上工作者和游客提供可靠的安全保障。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">救援船只展示</a></li>
+                        <li><a href="#">救援案例库</a></li>
+                        <li><a href="#">安全培训课程</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>安全提示</h4>
+                    <ul>
+                        <li><a href="#">恶劣天气预警</a></li>
+                        <li><a href="#">防溺水教育</a></li>
+                        <li><a href="#">船舶适航检查</a></li>
+                        <li><a href="#">应急物资清单</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>救援热线：12395</li>
+                        <li>紧急邮箱：safety@maritime-rescue.com</li>
+                        <li>地址：中国沿海海事救援中心</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 海事救援通. 保留所有权利. 本站内容仅供参考，具体救援行动请以官方调度为准。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+                      </html>
