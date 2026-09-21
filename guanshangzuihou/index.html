@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关上最后的门下载 - 安全稳定的资源获取与使用指南</title>
+    <meta name="description" content="关上最后的门下载官方资源及安全安装教程。提供正版下载地址、版本更新信息、硬件配置要求及常见问题解决方案，助您顺利体验游戏内容。">
+    <meta name="keywords" content="关上最后的门下载, 关上最后的门, 游戏下载, 恐怖游戏, 资源安装">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-color: #1a1a1a;
+            --card-bg: #252525;
+            --text-main: #ecf0f1;
+            --text-secondary: #bdc3c7;
+            --border-radius: 8px;
+            --spacing-unit: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(26, 26, 26, 0.95);
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--text-main);
+        }
+
+        .btn-nav {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .btn-nav:hover {
+            background-color: #34495e;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(44, 62, 80, 0.2) 100%);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        .cta-group {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+            box-shadow: 0 4px 14px rgba(231, 76, 60, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.6);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--text-secondary);
+            color: var(--text-secondary);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--text-main);
+            color: var(--text-main);
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .info-card {
+            background-color: var(--card-bg);
+            padding: 24px;
+            border-radius: var(--border-radius);
+            border: 1px solid #333;
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            border-color: #444;
+        }
+
+        .info-icon {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: var(--accent-color);
+        }
+
+        .info-card h3 {
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .info-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+        }
+
+        /* Download Steps */
+        .steps-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .step-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* System Requirements */
+        .req-box {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            margin-top: 40px;
+        }
+
+        .req-title {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .req-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .req-item h4 {
+            color: var(--accent-color);
+            margin-bottom: 8px;
+        }
+
+        .req-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: var(--text-secondary);
+        }
+
+        .req-item li {
+            margin-bottom: 6px;
+        }
+
+        /* FAQ */
+        .faq-section {
+            padding: 60px 0;
+            background-color: #111;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 24px;
+        }
+
+        .faq-item {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+        }
+
+        .faq-item h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .faq-item p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            padding: 40px 0;
+            border-top: 1px solid #333;
+            margin-top: 60px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 16px 0;
+                gap: 16px;
+            }
+
+            nav ul {
+                gap: 16px;
+                font-size: 0.9rem;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-color)"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                关上最后的门<span>资源站</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#guide">安装指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#news">资讯动态</a></li>
+                </ul>
+            </nav>
+            <a href="#download" class="btn-nav">立即下载</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>关上最后的门下载</h1>
+                <p>体验沉浸式的恐怖解谜冒险。获取安全、稳定的官方安装包，快速开始您的逃生之旅。</p>
+                <div class="cta-group" id="download">
+                    <a href="#" class="btn btn-primary" onclick="showDownloadInfo(event)">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        立即下载
+                    </a>
+                    <a href="#guide" class="btn btn-outline">查看安装教程</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Cards -->
+        <section class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">🔒</div>
+                    <h3>安全下载</h3>
+                    <p>所有资源均经过人工检测，确保无病毒、无恶意插件，保护您的设备安全。</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">⚡</div>
+                    <h3>高速加速</h3>
+                    <p>提供多线路加速服务，解决下载缓慢问题，让您快速获取游戏资源。</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🛠️</div>
+                    <h3>完整汉化</h3>
+                    <p>提供专业汉化补丁，完美适配中文用户，降低阅读门槛，提升游戏体验。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section id="guide" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>关上最后的门下载与安装指南</h2>
+                    <p>遵循以下步骤，即可在您的设备上成功运行游戏</p>
+                </div>
+
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>确认系统环境</h3>
+                            <p>在开始关上最后的门下载之前，请确保您的电脑满足最低配置要求。建议关闭杀毒软件的实时监控，以免误拦截游戏文件。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>获取安装包</h3>
+                            <p>点击上方“立即下载”按钮，选择适合您网络环境的下载节点。下载完成后，请检查文件大小是否与描述一致，避免下载损坏。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>解压与安装</h3>
+                            <p>使用 WinRAR 或 7-Zip 解压下载的压缩包。找到主程序运行程序，按照向导提示完成安装。安装路径建议使用英文，避免路径过长导致读取错误。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>启动游戏</h3>
+                            <p>安装完成后，桌面或开始菜单会出现游戏图标。双击启动，首次运行可能需要联网验证或加载资源包，请耐心等待。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Requirements -->
+                <div class="req-box">
+                    <h3 class="req-title">最低系统配置要求</h3>
+                    <div class="req-grid">
+                        <div class="req-item">
+                            <h4>操作系统</h4>
+                            <ul>
+                                <li>Windows 7 64位及以上</li>
+                                <li>Windows 10 64位</li>
+                            </ul>
+                        </div>
+                        <div class="req-item">
+                            <h4>处理器 (CPU)</h4>
+                            <ul>
+                                <li>Intel Core i3-2100 或同等性能</li>
+                                <li>AMD Athlon II X4 640</li>
+                            </ul>
+                        </div>
+                        <div class="req-item">
+                            <h4>内存 (RAM)</h4>
+                            <ul>
+                                <li>4 GB RAM</li>
+                            </ul>
+                        </div>
+                        <div class="req-item">
+                            <h4>显卡 (GPU)</h4>
+                            <ul>
+                                <li>NVIDIA GeForce GTX 560 / AMD Radeon HD 6850</li>
+                                <li>1GB 显存</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>常见问题解答</h2>
+                    <p>关于关上最后的门下载与安装的疑问解答</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>下载速度很慢怎么办？</h4>
+                        <p>请尝试更换下载节点。如果使用的是高速下载器，请确保其后台运行且未限制速度。部分资源可能需要使用迅雷或IDM进行下载。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>安装后无法启动游戏？</h4>
+                        <p>请检查是否缺少必要的运行库（如DirectX, Visual C++）。确保显卡驱动已更新至最新版本，并尝试以管理员身份运行游戏。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>游戏卡顿或闪退怎么解决？</h4>
+                        <p>建议降低游戏内的画质设置，关闭垂直同步。检查电脑温度，确保散热良好，并关闭不必要的后台程序。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>需要联网吗？</h4>
+                        <p>游戏安装后通常需要联网验证一次，之后可以进入离线模式游玩，但部分DLC内容可能需要持续联网验证。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 关上最后的门资源站. 保留所有权利。</p>
+            <p>本站资源仅供学习交流使用，请于下载后24小时内删除。如喜欢游戏，请支持正版。</p>
+            <div style="margin-top: 16px; font-size: 0.8rem; color: #555;">
+                <a href="#">隐私政策</a> | <a href="#">服务条款</a> | <a href="#">联系我们</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showDownloadInfo(e) {
+            e.preventDefault();
+            // 简单的交互反馈
+            const btn = e.currentTarget;
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = '准备就绪，请点击下方链接';
+            btn.style.backgroundColor = '#27ae60';
+            
+            setTimeout(() => {
+                alert('感谢您的关注！\n\n在实际部署中，这里将跳转到真实的下载服务器地址或显示详细的下载参数。\n\n模拟下载：https://example.com/download/lastdoor.exe');
+                btn.innerHTML = originalText;
+                btn.style.backgroundColor = '';
+            }, 500);
+        }
+    </script>
+</body>
+</html>
