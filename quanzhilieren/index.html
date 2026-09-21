@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="全职猎人剧场版官方资讯、上映时间、剧情简介及角色介绍。包含《贪婪之岛》《最终任务》等作品详细资料，粉丝社区与周边信息。">
+    <meta name="keywords" content="全职猎人剧场版,全职猎人,富坚义博,贪婪之岛,最终任务,动画电影">
+    <title>全职猎人剧场版-官方资讯与观影指南</title>
+    <style>
+        :root {
+            --primary-color: #0085a0;
+            --primary-dark: #005f6b;
+            --accent-color: #ffcc00;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --bg-body: #f4f6f8;
+            --bg-card: #ffffff;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            margin-bottom: var(--spacing-unit);
+            border-left: 5px solid var(--primary-color);
+            padding-left: 12px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section-title a {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: normal;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-card);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--text-main);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(0, 133, 160, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/hunterxhunter/1920/600') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 24px;
+            opacity: 0.9;
+            max-width: 600px;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 0;
+            font-size: 0.9rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-item strong {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        /* Movie Grid */
+        .movie-section {
+            padding: 40px 0;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .movie-card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .poster-wrapper {
+            position: relative;
+            padding-top: 140%; /* Aspect ratio for poster */
+            overflow: hidden;
+        }
+
+        .poster-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .movie-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .movie-meta {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tag {
+            background-color: #eef2f5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+
+        .tag.highlight {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .movie-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Character Section */
+        .character-section {
+            background-color: #eef2f5;
+            padding: 60px 0;
+        }
+
+        .char-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .char-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .char-card:hover {
+            transform: scale(1.02);
+        }
+
+        .char-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 16px;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+        }
+
+        .char-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .char-role {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* News/Info Section */
+        .info-section {
+            padding: 60px 0;
+        }
+
+        .info-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .news-item {
+            display: flex;
+            gap: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .news-item:hover {
+            border-left-color: var(--primary-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .news-date {
+            flex-shrink: 0;
+            text-align: center;
+            width: 60px;
+        }
+
+        .date-day {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            line-height: 1;
+        }
+
+        .date-month {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .news-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+
+        .news-content p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .sidebar {
+            background: white;
+            padding: 24px;
+            border-radius: 8px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .faq-list li {
+            margin-bottom: 12px;
+        }
+
+        .faq-list details {
+            cursor: pointer;
+        }
+
+        .faq-list summary {
+            font-weight: 600;
+            font-size: 0.95rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-list summary::after {
+            content: '+';
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        .faq-list details[open] summary::after {
+            content: '-';
+        }
+
+        .faq-content {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            padding-left: 10px;
+            border-left: 2px solid #eee;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            padding: 60px 0 20px;
+            margin-top: auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 12px;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .info-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .news-item {
+                flex-direction: column;
+            }
+
+            .news-date {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            全职猎人<span>剧场版</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#movies">剧场版</a></li>
+                <li><a href="#characters">角色</a></li>
+                <li><a href="#news">资讯</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="btn btn-outline">登录</button>
+            <button class="btn btn-primary">注册</button>
+        </div>
+    </div>
+</header>
+
+<div class="stats-bar">
+    <div class="container stats-grid">
+        <div class="stat-item">
+            <strong>2</strong>
+            <span>官方剧场版</span>
+        </div>
+        <div class="stat-item">
+            <strong>100%</strong>
+            <span>正版授权</span>
+        </div>
+        <div class="stat-item">
+            <strong>4K</strong>
+            <span>高清画质</span>
+        </div>
+        <div class="stat-item">
+            <strong>官方</strong>
+            <span>社区支持</span>
+        </div>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="container hero-content">
+        <h1>探索无尽的冒险世界</h1>
+        <p>集结小杰、酷拉皮卡、雷欧力与奇犽，重温富坚义博笔下的经典篇章。了解《贪婪之岛》与《最终任务》的详细设定与精彩看点。</p>
+        <div style="display: flex; gap: 16px;">
+            <a href="#movies" class="btn btn-primary">观看推荐</a>
+            <a href="#about" class="btn btn-outline" style="border-color: white; color: white;">了解更多</a>
+        </div>
+    </div>
+</section>
+
+<main>
+    <!-- Movie List Section -->
+    <section id="movies" class="movie-section container">
+        <div class="section-title">
+            <span>官方剧场版</span>
+            <a href="#">查看全部 &rarr;</a>
+        </div>
+        <div class="movie-grid">
+            <!-- Movie 1 -->
+            <article class="movie-card">
+                <div class="poster-wrapper">
+                    <img src="https://picsum.photos/seed/greedisland/400/560" alt="全职猎人剧场版 贪婪之岛">
+                </div>
+                <div class="card-content">
+                    <h2 class="movie-title">全职猎人剧场版：贪婪之岛</h2>
+                    <div class="movie-meta">
+                        <span>2011年上映</span>
+                        <span class="tag highlight">剧场版</span>
+                    </div>
+                    <p class="movie-desc">小杰等人为了找回奇犽，接受了雷欧力的委托，寻找并进入“贪婪之岛”这款游戏。在游戏中，他们发现了关于念能力与幻影旅团的关键线索。</p>
+                </div>
+            </article>
+
+            <!-- Movie 2 -->
+            <article class="movie-card">
+                <div class="poster-wrapper">
+                    <img src="https://picsum.photos/seed/final/400/560" alt="全职猎人剧场版 最终任务">
+                </div>
+                <div class="card-content">
+                    <h2 class="movie-title">全职猎人剧场版：最终任务</h2>
+                    <div class="movie-meta">
+                        <span>2013年上映</span>
+                        <span class="tag highlight">剧场版</span>
+                    </div>
+                    <p class="movie-desc">在友克鑫市拍卖会前夕，小杰一行人遭遇幻影旅团的重创。为了复活死去的同伴，他们必须进入由尼特罗会长设计的“最终任务”VR游戏。</p>
+                </div>
+            </article>
+
+            <!-- Movie 3 -->
+            <article class="movie-card">
+                <div class="poster-wrapper">
+                    <img src="https://picsum.photos/seed/phantom/400/560" alt="全职猎人剧场版 贪婪之岛 VR">
+                </div>
+                <div class="card-content">
+                    <h2 class="movie-title">贪婪之岛 VR 版</h2>
+                    <div class="movie-meta">
+                        <span>2023年发售</span>
+                        <span class="tag">游戏</span>
+                    </div>
+                    <p class="movie-desc">基于剧场版内容改编的VR游戏，让玩家能够亲自体验游戏中的战斗系统与剧情，是粉丝必玩的互动体验。</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Character Section -->
+    <section id="characters" class="character-section">
+        <div class="container">
+            <div class="section-title">
+                <span>主要角色</span>
+                <a href="#">角色图鉴 &rarr;</a>
+            </div>
+            <div class="char-grid">
+                <div class="char-card">
+                    <img src="https://picsum.photos/seed/gon/150/150" alt="小杰" class="char-avatar">
+                    <h3 class="char-name">金·富力士</h3>
+                    <p class="char-role">主角 / 猎人</p>
+                </div>
+                <div class="char-card">
+                    <img src="https://picsum.photos/seed/killua/150/150" alt="奇犽" class="char-avatar">
+                    <h3 class="char-name">奇犽·揍敌客</h3>
+                    <p class="char-role">挚友 / 猎人</p>
+                </div>
+                <div class="char-card">
+                    <img src="https://picsum.photos/seed/leorio/150/150" alt="雷欧力" class="char-avatar">
+                    <h3 class="char-name">雷欧力</h3>
+                    <p class="char-role">伙伴 / 医生</p>
+                </div>
+                <div class="char-card">
+                    <img src="https://picsum.photos/seed/kurapika/150/150" alt="酷拉皮卡" class="char-avatar">
+                    <h3 class="char-name">酷拉皮卡</h3>
+                    <p class="char-role">伙伴 / 银发族</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="news" class="info-section container">
+        <div class="info-layout">
+            <div class="news-area">
+                <div class="section-title">
+                    <span>最新资讯</span>
+                    <a href="#">更多新闻 &rarr;</a>
+                </div>
+                <div class="news-list">
+                    <article class="news-item">
+                        <div class="news-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">10月</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>2023年《全职猎人》官方活动回顾</h3>
+                            <p>回顾年度粉丝聚会，展示最新周边产品及剧场版高清重制版预告。</p>
+                        </div>
+                    </article>
+                    <article class="news-item">
+                        <div class="news-date">
+                            <span class="date-day">08</span>
+                            <span class="date-month">10月</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>富坚义博宣布休刊原因分析与未来展望</h3>
+                            <p>针对近期漫画连载暂停的官方回应，以及对剧场版内容的补充说明。</p>
+                        </div>
+                    </article>
+                    <article class="news-item">
+                        <div class="news-date">
+                            <span class="date-day">22</span>
+                            <span class="date-month">09月</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>《贪婪之岛》VR游戏发售日期确认</h3>
+                            <p>PlayStation VR平台独占游戏，现已开启预购，包含独家限定道具。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <h3>常见问题 (FAQ)</h3>
+                <ul class="faq-list">
+                    <li>
+                        <details open>
+                            <summary>剧场版动画的剧情与主线漫画有何不同？</summary>
+                            <div class="faq-content">
+                                剧场版通常作为漫画内容的补充或平行世界展开。例如《贪婪之岛》和《最终任务》在剧情走向上与漫画原著存在差异，主要侧重于展示小杰团队的能力成长及特定角色的情感刻画。
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>在哪里可以观看正版的全职猎人剧场版？</summary>
+                            <div class="faq-content">
+                                建议关注各大正版流媒体平台（如Netflix、优酷等）的动漫专区，或购买官方发行的蓝光DVD/数字版。请勿观看未经授权的盗版资源。
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>剧场版中的角色配音是否与TV版一致？</summary>
+                            <div class="faq-content">
+                                是的，所有剧场版的声优阵容均与TV版动画保持一致，由日本知名声优团队演绎。
+                            </div>
+                        </details>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>关于全职猎人</h4>
+                <p style="font-size: 0.9rem; line-height: 1.6;">《全职猎人》是富坚义博创作的经典漫画作品，剧场版动画以其精良的制作和扣人心弦的剧情深受全球粉丝喜爱。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#">漫画连载</a></li>
+                    <li><a href="#">TV版动画</a></li>
+                    <li><a href="#">剧场版列表</a></li>
+                    <li><a href="#">周边商城</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>支持与联系</h4>
+                <ul>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">版权声明</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">加入社区</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>关注我们</h4>
+                <ul>
+                    <li><a href="#">微博</a></li>
+                    <li><a href="#">微信公众号</a></li>
+                    <li><a href="#">Bilibili</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 全职猎人剧场版资讯站. All Rights Reserved. 本站为粉丝资讯聚合平台，非官方站点。</p>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
